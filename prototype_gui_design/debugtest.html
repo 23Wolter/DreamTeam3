@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugtest</title>
+</head>
+<body>
+check console + scripts
+
+</body>
+
+<script>
+    var Debug_Mode = true; // change this to show debugging info
+
+
+    var Debug = console.log; // custom console.log method
+    var Assert = console.assert; // custom assert method
+    if (!Debug_Mode){
+        Assert = Debug = function(){};
+    }
+
+
+
+    Debug("Testing debugging mode. This statement prints only when Debug_mode = true");
+    console.log("This statement prints all the time!")
+    Assert(1===1); // executes without problem
+    Assert(false, "Expected true"); // yields "Error: Assert failed: Expected true" in console
+
+</script>
+</html>

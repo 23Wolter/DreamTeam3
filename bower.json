@@ -1,0 +1,23 @@
+{
+  "name": "opteksemester3",
+  "description": "",
+  "main": "",
+  "authors": [
+    "slimcdk <cs@slimc.dk>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Jakobtottrup/OptekSemester3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "aframe": "^0.7.0",
+    "bootstrap": "*",
+    "leaflet": "^1.2.0"
+  }
+}

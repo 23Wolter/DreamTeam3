@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "optek3-webstorage",
+  "private_key_id": "85bba7b47bf3c280380099850d7be276002247cc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCm8XDgWHBh2Prs\nc0QuYxAAUBUyMC3hN16hUDpWYJEIgFSEvR0QjUAskK1NyhxF7cOuXiY3RQhhkkNw\nnyz8YpOfF+9zdcJ28J955Xl/vZ2+DJr33s83EHmyrMWv1yhVmwY5NMfp91rtEwV2\nNA8rT8UiaUVP0OK7aIuh1TGhwcH8wwDt58AzKQ6SlA5UNK6C1H3tu3jDkwe8wAm8\n0ThFFjpvi6Pp5aJI7FgyZoe/yTjnl0UXVbixf/B/rixV24JO3Y889MUIEoOxT2T+\nISyM3B/MDLaU21Q28mTSZOt9OpF80V0ECiTxnXWYFxvS7u7NMim/W4LhsA0hkxNa\neCqP6y0fAgMBAAECggEASNHqZcHOC7BlC7zf0cgeU7Sa+lBvwtyvJ3hiagknWmj3\n9Qq04eJrSsU1A0iU+p/TCn1A+DzhggYV6stUCSdKs0vyhA+q6szdE4PYcrMYWq0O\n7+49vwwtuZWJicE1c9nyZgOy7EicXes9J6lfsInUOMVomX9JV2wr9ESVqLRm1MTa\nhtuUP7vz7s9bYvlQSXio9rfeuNrvWzJUx9R5PaI8sm8ztkywwfUXXcMGmWImhBFo\n+nzaugr4daez0K3x6XPWdl2X2YhKM903buHmGZDDDBZAyN1RLj0Rp/r5F1aedLzn\n/ig7N7Ko+QQ5wV1CEJVhDH/LnXS0M0R0EW56h7E/4QKBgQDQ/0JDHnqXx+DiPt94\nn5m7v44klGToJqL4tdBYhod+XY2n5ab80zFvf2kRdrI4m7BEFiHHvhM06dWmVkeh\njPg5BN6EAuP5gBZ2hdKFNsvwbYb8Nztmma1+ciJKVGzn8nYIkbm77S1Vgcm58+Lr\nlpPl7PywX75NeaAPEPyZB7alzwKBgQDMfPpotstSBjHytHWEqvAokeA684PpWl4n\nC+rhLRz5jNSVZ4I0B05Orm/3ynCZGIJ0lt8NwF/S7PySkWMVzdE+BUHWLPNCYToe\nsT/3qNGXm7Et6+llRIWMQFIYKUM+rQKD8aUauS4ln9C4WsMD+dhFQXN7EUuG3Om3\n5FazWqAnsQKBgAaCPJUMiPLbJbTGEn2WMtp2/71B5daZBXBLcT6gie20iinVbBrp\nlNuNEz+Y+7npl1a3fbvTvpNiSOYSP87XLg/QiAGCeYkWpRxx1HmTmExXjOGj8rSi\nSpXqhgjckjuzAFwJ9cfVfhjwntCsuL9vhBGgDMqNYMbW59YwSD2X0OdfAoGBAKVe\nzQOyEGudJveoiQFpXB7zGeuS07L7qfjZ4nGIEk6eXa0VsG5zGhj3aQVzaevlrlqr\nSGfOk6/4h6ngeclAUV9e0QdsAq5EAsSfg6O9mwKInpkMmAuVhosN2VZAyGj/cXFT\nErqx12gF/r2YaO3mN8iKTeHQ8st2DGzy9ErHl42BAoGAM9mz8Mud5nDBE+ljpQiY\nwxmudazEhXMkUNFKE2XXIr92NALoCXN8qG7KZwV1M+BHXIEEHI7CDkgjlDzLwqu1\n4c+Tqk5ff1ldefed3DPTb38SscVEHOQmUVbp6T9pkW8AEvIJgzZhtUrQMDdDGLJr\nlpFIlvZ6/YK5PDt7dVSBCxk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "server@optek3-webstorage.iam.gserviceaccount.com",
+  "client_id": "104892777957566946329",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/server%40optek3-webstorage.iam.gserviceaccount.com"
+}
