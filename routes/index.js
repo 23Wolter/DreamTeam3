@@ -1,23 +1,16 @@
 var express = require('express');
 var router = express.Router();
 
-var initials;
-var testModules = [];
+
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	res.render('index', {
+	res.render('home', {
 		title: 'Express'
 	});
-	testModules = [];
 });
 
 
-
-//router.get('/filepicker', function (req, res, next) {
-//    res.render('filepicker', {
-//        title: 'Filepicker'
-//    });
-//});
 //
 ////var initials = "oni";
 ///*      HER ER ALLE TEACHER SIDERNE       */
