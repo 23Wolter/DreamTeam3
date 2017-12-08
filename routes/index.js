@@ -39,11 +39,11 @@ router.get('/', function (req, res, next) {
 ///* ALLE FUNKTIONER DER ER TILKNYTTET MAIN */
 //
 ////henter hjemmesiden 'main' 
-//router.get('/main', function (req, res) {
-//    res.render('main', {
-//        title: 'Main'
-//    });
-//});
+router.get('/index', function (req, res) {
+	res.render('index', {
+		title: 'Main'
+	});
+});
 //
 //
 //router.post('/index_addinfo', function (req, res) {
