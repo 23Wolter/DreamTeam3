@@ -4,10 +4,10 @@ var router = express.Router();
 
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-	res.render('home', {
-		title: 'Express'
-	});
+router.get('/', function(req, res, next) {
+    res.render('index', {
+        title: 'Express'
+    });
 });
 
 
@@ -39,10 +39,16 @@ router.get('/', function (req, res, next) {
 ///* ALLE FUNKTIONER DER ER TILKNYTTET MAIN */
 //
 ////henter hjemmesiden 'main' 
-router.get('/index', function (req, res) {
-	res.render('index', {
-		title: 'Main'
-	});
+router.get('/index', function(req, res) {
+    res.render('index', {
+        title: 'Main'
+    });
+});
+
+router.get('/animation', function(req, res) {
+    res.render('animation', {
+        title: 'Isen smelter'
+    });
 });
 //
 //
