@@ -44,6 +44,21 @@ router.get('/index', function (req, res) {
 		title: 'Main'
 	});
 });
+router.get('/1', function (req, res) {
+	res.render('textpage', {
+		title: 'Main'
+	});
+});
+router.get('/2', function (req, res) {
+	res.render('picturepage', {
+		title: 'Main'
+	});
+});
+router.get('/3', function (req, res) {
+	res.render('taskpage', {
+		title: 'Main'
+	});
+});
 //
 //
 //router.post('/index_addinfo', function (req, res) {
