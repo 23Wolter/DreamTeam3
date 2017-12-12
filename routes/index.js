@@ -4,10 +4,10 @@ var router = express.Router();
 
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-	res.render('home', {
-		title: 'Express'
-	});
+router.get('/', function(req, res, next) {
+    res.render('index', {
+        title: 'Express'
+    });
 });
 
 
@@ -39,10 +39,53 @@ router.get('/', function (req, res, next) {
 ///* ALLE FUNKTIONER DER ER TILKNYTTET MAIN */
 //
 ////henter hjemmesiden 'main' 
-router.get('/index', function (req, res) {
-	res.render('index', {
-		title: 'Main'
-	});
+router.get('/index', function(req, res) {
+    res.render('index', {
+        title: 'Main'
+    });
+});
+
+var video_pages = [
+    'locations/1/360video',
+    'locations/2/360video',
+    'locations/3/360video',
+    'locations/4/360video'
+];
+
+router.get('/locations/1/360video', function(req, res) {
+    res.render(video_pages[0], {
+        title: 'Danmark'
+    });
+});
+
+router.get('/locations/2/360video', function(req, res) {
+    res.render(video_pages[1], {
+        title: 'Grønland'
+    });
+});
+
+router.get('/locations/3/360video', function(req, res) {
+    res.render(video_pages[2], {
+        title: 'Amazonas'
+    });
+});
+
+router.get('/locations/4/360video', function(req, res) {
+    res.render(video_pages[3], {
+        title: 'Kina'
+    });
+});
+
+router.post('/render_video', function(req, res) {
+    var id = req.body.nextpage;
+    var nextpage = video_pages[id];
+    res.redirect(nextpage);
+});
+
+router.get('/animation', function(req, res) {
+    res.render('animation', {
+        title: 'Isen smelter'
+    });
 });
 router.get('/1', function (req, res) {
 	res.render('textpage', {

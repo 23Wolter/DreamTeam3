@@ -1,25 +1,35 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | DreamTeam</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/htmltest.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">DreamTeam</div>
-      </div>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link href="/stylesheets/home.css" rel="stylesheet" type="text/css" />
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script src="js/manipulateEarth.js"></script>
+    <script src="js/initializeEarth.js"></script>
+
+    <title>Klimaforandringer</title>
+
+
+</head>
+
+<body onload="initialize()">
+    <div id="menu">
+        <ul>
+            <li><button id="0">Tema 1: Drivhuseffekten</button></li>
+            <li><button id="1">Tema 2: Havstrømme</button></li>
+            <li><button id="2">Tema 3: Konsekvenser</button></li>
+            <li><button id="3">Tema 4: Grøn energi</button></li>
+            <li>Tema 5: Projekt</li>
+        </ul>
     </div>
-  </body>
+    <div id="content_earth_div">
+        <form id="earth_form" method="post" action="/render_video">
+            <div id="earth_div"></div>
+            <input type="hidden" name="nextpage" id="nextpage">
+        </form>
+    </div>
+
+</body>
+
 </html>
