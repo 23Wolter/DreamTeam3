@@ -45,6 +45,43 @@ router.get('/index', function(req, res) {
     });
 });
 
+var video_pages = [
+    'locations/1/360video',
+    'locations/2/360video',
+    'locations/3/360video',
+    'locations/4/360video'
+];
+
+router.get('/locations/1/360video', function(req, res) {
+    res.render(video_pages[0], {
+        title: 'Danmark'
+    });
+});
+
+router.get('/locations/2/360video', function(req, res) {
+    res.render(video_pages[1], {
+        title: 'Grønland'
+    });
+});
+
+router.get('/locations/3/360video', function(req, res) {
+    res.render(video_pages[2], {
+        title: 'Amazonas'
+    });
+});
+
+router.get('/locations/4/360video', function(req, res) {
+    res.render(video_pages[3], {
+        title: 'Kina'
+    });
+});
+
+router.post('/render_video', function(req, res) {
+    var id = req.body.nextpage;
+    var nextpage = video_pages[id];
+    res.redirect(nextpage);
+});
+
 router.get('/animation', function(req, res) {
     res.render('animation', {
         title: 'Isen smelter'

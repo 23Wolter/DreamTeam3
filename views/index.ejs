@@ -3,74 +3,31 @@
 
 <head>
     <link href="/stylesheets/home.css" rel="stylesheet" type="text/css" />
+    <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="http://www.webglearth.com/v2/api.js"></script>
-    <script>
-        var rotate = false;
-
-        function initialize() {
-            var earth = new WE.map('earth_div');
-            earth.setView([46.8011, 8.2266], 2);
-            WE.tileLayer('http://data.webglearth.com/natural-earth-color/{z}/{x}/{y}.jpg', {
-                tileSize: 256,
-                bounds: [
-                    [-85, -180],
-                    [85, 180]
-                ],
-                minZoom: 0,
-                maxZoom: 16,
-                attribution: 'WebGLEarth example',
-                tms: true
-            }).addTo(earth);
-
-            var marker = WE.marker([-4.068958, -63.318593]).addTo(earth);
-            marker.bindPopup("<b>Amazonas</b><br><a href='aframe.html'>Klik her!</a>", {
-                maxWidth: 150,
-                closeButton: true
-            }).openPopup();
-
-            var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
-            marker2.bindPopup("<b>Cairo</b><br>Yay, you found me!", {
-                maxWidth: 120,
-                closeButton: false
-            });
-        }
-
-
-        if (rotate) {
-            // Start a simple rotation animation
-            var before = null;
-            requestAnimationFrame(function animate(now) {
-                var c = earth.getPosition();
-                var elapsed = before ? now - before : 0;
-                before = now;
-                earth.setCenter([c[0], c[1] + 0.1 * (elapsed / 30)]);
-                requestAnimationFrame(animate);
-            });
-        }
-
-
-        function startStopRotation() {
-            rotate = !rotate;
-        }
-    </script>
+    <script src="js/manipulateEarth.js"></script>
+    <script src="js/initializeEarth.js"></script>
 
     <title>Klimaforandringer</title>
+
+
 </head>
 
 <body onload="initialize()">
     <div id="menu">
         <ul>
-            <li>Tema 1</li>
-            <li>Tema 2</li>
-            <li>Tema 3</li>
-            <li>Tema 4</li>
-            <li>Tema 5</li>
+            <li><button id="0">Tema 1: Drivhuseffekten</button></li>
+            <li><button id="1">Tema 2: Havstrømme</button></li>
+            <li><button id="2">Tema 3: Konsekvenser</button></li>
+            <li><button id="3">Tema 4: Grøn energi</button></li>
+            <li>Tema 5: Projekt</li>
         </ul>
     </div>
     <div id="content_earth_div">
-        <div id="earth_div">
-            <!--		<button onclick="startStopRotation()">BUTTON!</button>-->
-        </div>
+        <form id="earth_form" method="post" action="/render_video">
+            <div id="earth_div"></div>
+            <input type="hidden" name="nextpage" id="nextpage">
+        </form>
     </div>
 
 </body>
